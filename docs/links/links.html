@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML links</title>
+	<meta charset="utf-8">
+</head>
+<body bgcolor="#b3b3b3">
+
+	<p name="top"></p>
+	<header>
+			<h1><a href="../index.html">Web Development</a></h1>
+		</header>
+
+		<pre><a href="../index.html">Home</a>  <a href="../list/list.html">list</a>  <a href="./links.html">links</a>  <a href="../images/images.html">Images</a>  <a href="../tables/tables.html">tables</a>  <a href="../forms/forms.html">forms</a></pre>
+
+		<h1>Links(hyperlinks)</h1><br><br>
+
+		<p>Web pages can contain links that take you directly to other pages and even specific parts of a given page. These links are known as hyperlinks.</p>
+
+		<p>Hyperlinks allow visitors to navigate between Web sites by clicking on words, phrases, and images. Thus you can create hyperlinks using text or images available on your any web page.</p>
+		<p>There are three types of link in HTML, they are: </p>
+		<ul>
+			<LI>Linking to external pages => Absolute reference.</LI>
+			<li>Linking to internal pages. And</li>
+			<li>Linking to a particular secion of a page.</li>
+		</ul>
+		<p>A link is specified using the anchor tag. Anything between the opening tag and the closing tag becomes part of the link and a user can click that part to reach to the linked document. <br><br><br>Following is the simple syntax to use this tag.</p> <br>
+			<img src="../IMG/asyntax.JPG" alt="syntax">
+ 		
+ 		<h2>Linking to external pages</h2>
+ 		<p>Here, we use this method of linking as a bridge to connect our webpage to another page that is not on our website. <br> We do this by inputing the URL of the external page we want to link into the Href attributes. <b>href="external URL"</b><br>we can also create a link to send emails from our web page, we simply do thos by folloeing this syntax <b>href="mailto:valid.email"</b> </p><br>
+
+ 		<img src="../IMG/external.JPG" alt="external pages">
+
+ 		<h2>Linking to internal pages</h2>
+ 		<p>This is done by inputing the directory of the page file(file path), into the value of the href attribute of the anchor tag. <br> <b>href="./page.html" </b> or <b>./folder/page.html</b> if it is in another folder.</p>
+
+ 		<h2>linking to  section of the page</h2>
+ 		<p>There are two methods of linking to a section of a page. We do this by using either a <b>NAME</b> attribute or an <b>ID</b></p> <br>
+
+ 		<ul>
+ 			<li> By using a name attribute, we add the name attribute to the opening tag of that particular section and give is any value, We then go to the point we are linking from and add our anchor tag with this href value: <b>href="page.html#sectionname"</b>. that is the directory of the current page # the name given to the section you want to link to.</li>
+ 			<li>By using the ID, we add an ID attribute to the section we are linking to and give it any value, we then go to the point we are linking from and add our anchor tag with this href value: <b>href="#idvalues"</li>
+ 		</ul>
+
+
+ 		<img src="../IMG/section.JPG" alt="linking to a section of the page">
+
+ 		<h2>Some anchor attributes:</h2>
+ 		<pre>
+ 			<ul>
+ 			<li><b>href:</b> specifies the URL of the target of a hyperlink. <br>Its value is any valid document URL, absolute or relative, <br>including a fragment identifier or a JavaScript code fragment.</li>
+ 			<li><b>target:</b> specify where to display the contents of a selected hyperlink. <br>If set to "_blank" then a new window will be opened to display the loaded page,<br> if set to "_top" or "_parent" then same window will be used to display the loaded document, <br> if set to "_self" then loads the new page in current window. <br>By default its "_self".</li>
+ 			<li><b>name & id:</b> attributes places a label within a document. <br> When that label is used in a link to that document,<br> it is the equivalent of telling the browser to goto that label.</li>
+ 			<li><b>event:</b> attributes like onClick, onMouseOver etc. are used to trigger any Javascript ot VBscript code.</li>
+ 			<li><b>title:</b> attribute lets you specify a title for the document to which you are linking. <br> The value of the attribute is any string, enclosed in quotation marks. <br>The browser might use it when displaying the link, perhaps flashing the title when the mouse passes over the link.</li>
+ 			<li><b>accesskey:</b> attribute attribute provides a keyboard shortcut that  can  be used to activate a link. <br>For example, you could make the T key an access key so that when the user presses  <br> the Alt or Ctrl key on his keyboard (depending on his operating system) along with the T key, the link gets activated.</li>
+ 		</ul>
+ 		</pre>
+ 		
+
+
+
+
+
+		<h3>Now try this</h3>
+		<p>Create a webpage about the different programs in the department of Computer science, Kwara State University. Make each program a section and create links to each section </p>
+		<ul>
+			<li>Regular</li>
+			<li>PDP (Professional Degree Programme)-</li>
+			<li>IDEL</li>
+		</ul>
+
+		<p><b>G00DLUCK!</b></p>
+
+		<a href="links2.html">click to view solution</a><br><br><br><br>
+
+
+
+		<a href="links.html#top">Goto top</a>
+
+
+
+
+
+
+		<footer class="foot">
+			<b>CONTACTS</b><br> Facebook @ <a href="#">Adesola David Oluwatobi</a> <br>
+		Email:<a href="mailto:teeprince099@gmail.com">teeprince099@gmail.com</a><br>
+		copyright &copy; 2019 All rights reserved
+
+		</footer>
+	
+</body>
+</html>
